@@ -20,13 +20,29 @@
   font-size: 20px;
 }
 
-.nav-item.active, .nav-item:hover {
+.nav-link i {
+  border-right: 1px solid black;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.nav-item.active,
+.nav-item:hover {
   font-weight: bold;
 }
 
 .navbar-brand {
-  font-size: 23px;
+  font-size: 24px;
   font-weight: bold;
+}
+
+.card {
+  background-color: rgba(0, 55, 172, 0);
+}
+
+.card:hover,
+.card-body:hover {
+  background-color: rgba(0, 55, 172, 0.5);
 }
 
 #fstCol {
@@ -102,10 +118,12 @@
 }
 
 .banner-button {
+  width: -moz-fit-content;
+  width: fit-content;
   color: #000;
   background-color: #fff;
   border-radius: 30px;
-  border-color: transparent;
+  border: 1px solid #0f43b1;
   justify-content: center !important;
 }
 .banner-button :hover {
@@ -117,6 +135,7 @@
 }
 
 .sidebar-tags {
+  padding-left: 0px;
   margin-bottom: -10px;
   margin-right: -10px;
 }
@@ -143,25 +162,13 @@
 
 .card-body {
   text-align: center;
+  display: grid;
 }
 
 .card-text {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.blue-button {
-  color: #000;
-  background-color: #fff;
-  border-radius: 30px;
-  border-color: transparent;
-}
-.blue-button :hover {
-  color: #fff;
-  border-radius: 30px;
-  border-color: transparent;
-  background: linear-gradient(270deg, rgb(0, 55, 172) 0%, rgb(73, 163, 254) 100%);
 }
 
 .page-numbers {
@@ -204,4 +211,20 @@
   display: flex;
   margin: 0px;
   justify-content: center;
+}
+
+.card-rev {
+  display: flex;
+  justify-content: center;
+}
+.card-rev i {
+  margin-right: 5px;
+}
+
+.checked {
+  color: orange;
+}
+
+.fa:hover {
+  color: yellow;
 }/*# sourceMappingURL=style.css.map */

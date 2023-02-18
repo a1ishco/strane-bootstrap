@@ -1,6 +1,6 @@
 const langdata = {
-    en: ["Home", 'Service', 'Project', 'Pages'],
-    az: ["Əsas səhifə", 'Xidmətlər', 'Layihələr', 'Səhifələr']
+    en: ["Home<i></i>", 'News<i></i>', 'Projects<i></i>', 'Pages<i></i>' , 'Cheats'],
+    az: ["Əsas səhifə<i></i>", 'Xəbərlər<i></i>', 'Layihələr<i></i>', 'Səhifələr<i></i>' , 'Oyun Cheatləri']
 }
 
 const langdataFooter = {
