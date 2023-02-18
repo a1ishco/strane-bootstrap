@@ -14,8 +14,8 @@ const langdataSearch = {
 }
 
 const langdataCat = {
-    en:['FPS','RPG','Shooter','3rd Person Shooter','Online'],
-    az:['FPS','Rol oynama','Atış','3cü şəxs atış','Onlayn']
+    en:['FPS','RPG','Shooter','Arcade','Online'],
+    az:['FPS','Rol oynama','Atış','Arkada','Onlayn']
 }
 
 export { langdata, langdataFooter ,langdataSearch , langdataCat}

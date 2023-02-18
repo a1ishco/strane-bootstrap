@@ -47,6 +47,8 @@
 
 .card:hover,
 .card-body:hover {
+
+    transition: 1s;
     background-color: rgb(0, 55, 172, 0.5);
 }
 
@@ -99,11 +101,18 @@
         -ms-flex-align: center;
         align-items: center;
         padding: 16px 30px;
-        background: #fff;
-        color: #3a3e4c;
+        background: rgb(0, 75, 150, 0.5);
+        color: #000;
         border-radius: 5px;
-
+        transition: 1s;
     }
+
+    a:hover {
+        translate: 15px;
+        background: -webkit-gradient(linear, right top, left top, from(rgb(0, 55, 172)), to(rgb(73, 163, 254)));
+        background: linear-gradient(270deg, rgb(0, 55, 172) 0%, rgb(73, 163, 254) 100%);
+    }
+
 
 }
 
@@ -113,6 +122,8 @@
     }
 
     li a:hover {
+        transition: 1s;
+scale: 1.1;
         color: #fff;
         background: -webkit-gradient(linear, right top, left top, from(rgb(0, 55, 172)), to(rgb(73, 163, 254)));
         background: linear-gradient(270deg, rgb(0, 55, 172) 0%, rgb(73, 163, 254) 100%);
@@ -139,20 +150,23 @@
 .banner-button {
     width: fit-content;
     color: #000;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 1);
     border-radius: 30px;
     border: 1px solid #0f43b1;
     justify-content: center !important;
 
-    :hover {
-        color: #fff;
-        border-radius: 30px;
-        width: 100%;
-        border-color: transparent;
-        background: -webkit-gradient(linear, right top, left top, from(rgb(0, 55, 172)), to(rgb(73, 163, 254)));
-        background: linear-gradient(270deg, rgb(0, 55, 172) 0%, rgb(73, 163, 254) 100%);
-    }
+
 }
+
+.banner-button :hover {
+
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(rgb(0, 55, 172)), to(rgb(73, 163, 254)));
+    background: linear-gradient(270deg, rgb(0, 55, 172) 0%, rgb(73, 163, 254) 100%);
+}
+
 
 .sidebar-tags {
     padding-left: 0px;
@@ -216,6 +230,11 @@
 
         }
 
+        a:hover {
+            transition: 1s;
+
+            scale: 1.1;
+        }
     }
 
     display: flex;
@@ -261,3 +280,24 @@
 .fa:hover {
     color: yellow;
 }
+
+#search-icon{
+    color: #fff;
+    
+}
+
+#search-icon:hover{
+    animation: rotation 1s infinite linear;
+
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+      }
+  }

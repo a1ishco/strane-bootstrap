@@ -34,9 +34,9 @@ const changeLang = () => {
 
             $('#banner-btn').html("İndi Al!!!")
             $('#tags').html("Populyar Teqlər")
-            $('.card-text').html("Buraxilis tarixi - ")
             $(langBtnPlay).html("İndi Oyna")
-
+            $('.card-text span').html("Buraxilis tarixi")
+            $('.card-rev i').html("Reytinq:")
 
         btn.innerHTML = '<img src="img/Flag_of_the_United_Kingdom_(1-2).svg.png" width="30px" height="20px" alt=""> EN'
     } else {
@@ -61,7 +61,8 @@ const changeLang = () => {
         $('#banner-btn').html("Buy Now!!!")
         $('#tags').html("Popular Tags")
         $(langBtnPlay).html("Play Now")
-        $('.card-text').html("Date Released - ")
+        $('.card-text span').html("Date Released")
+        $('.card-rev i').html("Rating:")
 
 
         btn.innerHTML = '<img src="img/Flag_of_Azerbaijan.svg.png" width="30px" height="20px" alt=""> AZ'
